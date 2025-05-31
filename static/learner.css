@@ -1,0 +1,93 @@
+.h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    box-decoration-break: clone ;
+    box-shadow: #464545 0px 0px 10px;
+    color: #000000;
+    text-align: center;
+}
+.h2{
+    
+
+    color: #c0b8b8;
+    text-align: center;
+    font-family: monospace;
+}
+
+.body{
+    background-image: url('images/stars.png'); 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 15px;
+}
+
+.p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    text-align: center;
+}
+
+.p2{
+    color: #a7a2a2;
+    font-size: 24px;
+    
+}
+
+
+.button1 {
+    background-color: #070707; /* Green */
+    border: none;
+    color: rgb(247, 243, 243);
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: #464545 0px 0px 10px;
+}
+.menu-pad{
+    padding: 10px;
+    background-color: #464545;
+    color: white;
+    text-align: center;
+    box-shadow: #202020 0px 0px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+
+.input {
+    width: 100%;
+    text-size-adjust: 100%;
+    padding: 12px 20px;
+    color: antiquewhite;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #a8a6a6;
+    border-radius: 6px;
+    background-color: #575555;
+}
+
+.back_button {
+  width: 65px;
+  height: 65px;
+  background: #48ff00;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #a6ff00, 0 0 12px #9dff00;
+  transition: transform 0.3s ease;
+  left: 50%;
+}
+.pred{
+    background-color: #272727;
+    color: #c0b8b8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: #202020 0px 0px 10px;
+
+}

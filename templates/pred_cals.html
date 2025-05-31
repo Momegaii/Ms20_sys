@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='learner.css') }}">
+  
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+  <title>ML/DL</title>
+</head>
+
+<body class="body">
+  <h1 class="h1" id="output">MS20s</h1>
+  <p class="p">/\/\______________________________________________________/\/\</p>
+  <button class="button1" onclick="window.location.href='/MSDL'">MS deep search << Calories Prediction by steps</button>
+
+  <div class="menu-pad" id="menuPad">
+    <h2 class="h2">please enter your steps:</h2>
+    <ul>
+      <input id="x" class="input" type="text" placeholder="X_predict1"">
+      <button class="button1" onclick="predictXcal()">Start Prediction</button>
+    </ul>
+    <div class="pred">
+      <p class="p2" id="prediction"></p>
+    </div>
+  </div>
+
+      
+  </script>
+<button class="back_button" onclick="window.location.href='/stars'">Back to Main Menu</button>
+  <p class="p">/\/\______________________________________________________/\/\</p>
+  <p2 class="p2">MS.SYS FOR MACHINE INTEL.2025.5</p2>
+</body>
+</html>

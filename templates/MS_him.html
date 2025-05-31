@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MS.sys for Machine Intelligence</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='nlp.css') }}">
+  
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body class="body">
+  <h1 class="h1">Hi, I am MS_him. How can I help?</h1>
+  <label for="userInput">Ask something:</label>
+  <input type="text" id="userInput" placeholder="Ask something..." />
+  <button id="askBtn">Ask</button>
+  <div class="MS" id="botResponse" aria-live="polite"></div>
+
+    <button class="back_button" onclick="window.location.href='/stars'">Back to Main Menu</button>
+</body>
+</html>

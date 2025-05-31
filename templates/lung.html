@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='learner.css') }}">
+    <script src="{{ url_for('static', filename='js/side_panel.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <title>MS20ML/DL</title>
+</head>
+
+<body class="body">
+  <h1 class="h1" id="output">MS20s</h1>
+  <p class="p">/\/\______________________________________________________/\/\</p>
+  <button class="button1" onclick="window.location.href='/MSDL'">MS deep search << Lung cancer Prediction by symptoms</button>
+
+  <div class="menu-pad" id="menuPad">
+    <h2 class="h2">please enter your symptoms:</h2>
+    <p>please enter based on your/his medical reports:</p>
+    <ul>
+        <p>please enter 1 for yes and 0 for no in the fields below : </p>
+      
+      
+      <h3 class="h3">is he / do you smoking :</h3>
+      <input id="x1" class="input" type="text" placeholder="X_predict1">
+      
+      <h3 class="h3">is he / do you have chronic_cough :</h3>
+      <input id="x2" class="input" type="text" placeholder="X_predict1">
+      
+      <h3 class="h3">is he / do you have shortness_of_breath :</h3>
+      <input id="x3" class="input" type="text" placeholder="X_predict1">
+      
+      <h3 class="h3">is he / do you have Fatigue:</h3>
+      <input id="x4" class="input" type="text" placeholder="X_predict1">
+      
+      <h3 class="h3">is he / do you have weight_loss:</h3>
+      <input id="x5" class="input" type="text" placeholder="X_predict1">
+      
+      <button class="button1" onclick="predictXlng()">Start Prediction</button>
+    </ul>
+    <div class="pred">
+      <p class="p2" id="prediction"></p>
+    </div>
+  </div>
+
+      
+  </script>
+<button class="back_button" onclick="window.location.href='/stars'">Back to Main Menu</button>
+  <p class="p">/\/\______________________________________________________/\/\</p>
+  <p2 class="p2">MS.SYS FOR MACHINE INTEL.2025.5</p2>
+</body>
+</html>

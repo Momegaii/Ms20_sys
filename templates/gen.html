@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gen.css') }}">
+    <script src="{{ url_for('static', filename='js/side_panel.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <title>General client requests deminsion :</title>
+</head>
+<body class="body">
+    <h1 class="h1">Thanks for using MS.sys</h1>
+    <!-- For the first request -->
+    <input class="field" type="text" id="requestg_email" placeholder="your email :" />
+    <input class="field" type="text" id="requestg_text" placeholder="Enter your request here..." />
+    <button class="button" id="submitBtn" onclick="request(); return false;">Submit</button>
+
+    <div class="requests-wall">
+        <h2>Requests Wall</h2>
+        <div class="pad">
+            <p class="p" id="requestsListg"></p>
+        </div>
+    <p>Will response soon Thank you.</p>        
+</body>
+</html>

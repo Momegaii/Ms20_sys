@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Request</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='js/side_panel.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body class="body">
+<h1 class="h1">Please enter your request</h1>
+
+<!-- For the second request -->
+<form class="container" id="requestForm">
+    <p class="p2">Please enter your email to get back to you:</p>
+    <input class="pad" id="requestm_email" type="text">
+    <p class="p2">Please enter your request here:</p>
+    <input class="pad" id="requestm_text" type="text">
+    <button class="button" onclick="requestmarket(); return false;">send request</button>
+</form>
+
+<div id="requestsWall" class="requests-wall">
+    <h2>Requests Wall</h2>
+    <div class="pad" >
+        <p class="p" id="requestsListM"></p>    
+    </div>
+</div>
+
+
+<p class="p">Help me reach my sales goal! : Meeting my girlfriend</p2>
+    
+
+<button class="back_button" onclick="window.location.href='/stars'">Back to Main Menu</button>
+</body>
+</html>>

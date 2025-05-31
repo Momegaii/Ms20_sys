@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="templates/images/width=device-width, initial-scale=1.0">
+    <title>MS20 marketplace</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='js/side_panel.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body class="body">
+    
+    <div class="container">
+        <h1 class="h1">MS20 Agents for sale :</h1>
+        <div class="card">
+            <h2 class="h2">Teacher Agent</h2>
+            <img class="img" src="{{ url_for('static', filename='images/I_need_a_teacher_that_is_writing.jpeg') }}" alt="Description">
+            <p class="p">Description of Agent 1.</p>
+            <button class="button" onclick="window.location.href='/request'">Buy Now</button>
+        </div>
+        <div class="card">
+            <h2 class="h2">Law Agent</h2>
+            <img class="img" src="{{ url_for('static', filename='images/ineed_a_law_hammer.jpeg') }}" alt="Description">
+
+            <p class="p">Description of Agent 2.</p>
+            <button class="button" onclick="window.location.href='/request'">Buy Now</button>
+        </div>
+        <div class="card">
+            <h2 class="h2">Bussines Agent</h2>
+            <img class="img" src="{{ url_for('static', filename='images/ineed_a_bussnise_case.jpeg') }}" alt="Description">
+
+            <p class="p">Description of Agent 3.</p>
+            <button class="button" onclick="window.location.href='/request'">Buy Now</button>
+        </div>
+        <div class="card">
+            <h2 class="h2">Science Agent</h2>
+            <img class="img" src="{{ url_for('static', filename='images/sci.jpeg') }}" alt="Description">
+
+            <p class="p">Description of Agent 3.</p>
+            <button class="button" onclick="window.location.href='/request'">Buy Now</button>
+        </div>
+        <div class="card">
+            <h2 class="h2">Trading Agent</h2>
+            <img class="img" src="{{ url_for('static', filename='images/private.jpeg') }}" alt="Description">
+           <p class="p">Description of Agent 3.</p>
+            <button class="button" onclick="window.location.href='/request'">Buy Now</button>
+        </div>
+        <div class="card">
+            <h2 class="h2">Multi persona</h2>
+            <img class="img" src="{{ url_for('static', filename='images/mb.jpeg') }}" alt="Description">
+
+            <p class="p">Description of Agent 3.</p>
+            <button class="button" onclick="window.location.href='/request'">Buy Now</button>
+        </div>
+    <button class="back_button" onclick="window.location.href='/stars'">Back to Main Menu</button>
+</html>

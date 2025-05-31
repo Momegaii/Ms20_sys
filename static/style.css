@@ -1,0 +1,131 @@
+.body{
+    background-image: url('images/img.jpeg');
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.h1{
+    color: #ecb51d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 5%;
+    box-shadow: #3f3f3f 0px 0px 16px;
+    border-radius: 8px;
+    background-color: rgba(92, 90, 90, 0.8);
+    width: 75%;
+}
+.h2{
+    color: #ecb51d;
+    font-family: monospace;
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 5%;
+    box-shadow: #3f3f3f 0px 0px 16px;
+    border-radius: 8px;
+    background-color: rgba(92, 90, 90, 0.8);
+    width: 75%;
+}
+
+.container{
+    box-shadow: #3f3f3f 0px 0px 32px;
+    width: 45%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #474747;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.img{
+    text-align: center;
+    width: 580px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: #3f3f3f 0px 0px 16px;
+    margin-bottom: 20px;
+}
+.card{
+    
+    background-color: #727070;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: #3f3f3f 0px 0px 16px;
+    transition: 0.7s ease;
+}
+.request_wall{
+    bottom: 0px;
+    position: fixed;
+
+}
+
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 0;
+}
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6d4d09d8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: #d88f09d8;
+    color: #161616;
+}
+.card:hover{
+    background-color: #d88f09d8;
+    color: #161616;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.p2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1d165;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 20px;
+
+    width: 500px;
+    height: 100px;
+    text-decoration: bold;
+    color: antiquewhite;
+}
+
+.back_button {
+  width: 65px;
+  height: 65px;
+  background: #48ff00;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #a6ff00, 0 0 12px #9dff00;
+  transition: transform 0.3s ease;
+  left: 50%;
+}
+
+.pad{
+    padding: 10px;
+    background-color: #464545;
+    color: white;
+    text-align: center;
+    box-shadow: #202020 0px 0px 10px;
+    border-radius: 5px;
+    margin: 10px;
+}

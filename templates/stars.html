@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MS.sys for Machine Intelligence</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stars.css') }}">
+  <script src="{{ url_for('static', filename='js/side_panel.js') }}" defer></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+
+</head>
+<body class="body">
+  <div class="network-container">
+    <svg class="connections">
+      <line x1="45%" y1="40%" x2="65%" y2="20%" stroke="#111" stroke-width="1"/>
+      <line x1="45%" y1="40%" x2="70%" y2="50%" stroke="#111" stroke-width="1"/>
+      <line x1="45%" y1="40%" x2="20%" y2="50%" stroke="#111" stroke-width="1"/>
+      <line x1="45%" y1="40%" x2="45%" y2="70%" stroke="#111" stroke-width="1"/>
+      <line x1="45%" y1="40%" x2="10%" y2="80%" stroke="#111" stroke-width="1"/>
+    </svg>
+
+    <!-- MAIN NODES -->
+    <div class="node" style="top: 40%; left: 45%;" onclick="window.open('https://github.com/Momegaii/menu_div_for_ui', '_blank')">
+      <div class="node-label">MAIN UI/UX</div>
+      <div class="node-description">The Main UI is the central menu for navigation.</div>
+      <div class="star"></div>
+    </div>
+  
+    <div class="node" style="top: 20%; left: 65%;" onclick="window.open('/MShim', '_blank')">
+      <div class="node-label">old NLP CHATBOT</div>
+      <div class="node-description">BOTS Interacts with users using natural language.</div>
+      <div class="star"></div>
+    </div>
+
+    <div class="node" style="top: 50%; left: 70%;" onclick="window.open('https://github.com/Momegaii/MS20Weather_api', '_blank')">
+      <div class="node-label">API SERVICES</div>
+      <div class="node-description">Provides REST APIs for external integrations.</div>
+      <div class="star"></div>
+    </div>
+
+    <div class="node" style="top: 50%; left: 20%;" onclick="window.open('https://github.com/Momegaii/Ms-global','_blank')">
+      <div class="node-label">AUTOMATION</div>
+      <div class="node-description">Handles background automation tasks.</div>
+      <div class="star"></div>
+    </div>
+
+    <div class="node" style="top: 70%; left: 45%;" onclick="window.open('/MSDL', '_blank')">
+      <div class="node-label">DEEP LEARN</div>
+      <div class="node-description">Adavanced Learning of features and Data as X.</div>
+      <div class="star"></div>
+    </div>
+
+    <div class="node" style="top: 80%; left: 10%;" onclick="window.open('https://github.com/Momegaii?tab=repositories', '_blank')">
+      <div class="node-label">PORTFOLIO</div>
+      <div class="node-description">My projects.</div>
+      <div class="star"></div>
+    </div>
+
+    <div class="node" style="top: 15%; left: 18%;" onclick="window.open('/market', '_blank')">
+      <div class="node-label">AI AGENTS</div>
+      <div class="node-description">A market to request any AI agent persona.</div>
+      <div class="star"></div>
+    </div>
+
+    <div class="node" style="top: 18.5%; left: 40%;" onclick="window.open('/Grequest', '_blank')">
+      <div class="node-label">General request</div>
+      <div class="node-description">A place to request any Service or code you want.</div>
+      <div class="star"></div>
+    </div>
+
+    <!-- DISTANT STARS -->
+    <div class="distant-star" style="top: 10%; left: 20%;"></div>
+    <div class="distant-star" style="top: 15%; left: 90%;"></div>
+    <div class="distant-star" style="top: 80%; left: 20%;"></div>
+    <div class="distant-star" style="top: 75%; left: 85%;"></div>
+    <div class="distant-star" style="top: 60%; left: 2%;"></div>
+    <div class="distant-star" style="top: 5%; left: 40%;"></div>
+    <div class="distant-star" style="top: 85%; left: 65%;"></div>
+    <div class="distant-star" style="top: 30%; left: 80%;"></div>
+    <div class="distant-star" style="top: 30%; left: 105%;"></div>
+    <div class="distant-star" style="top: 4%; left: 10%;"></div>
+    <div class="distant-star" style="top: 30%; left: 8%;"></div>
+    <div class="distant-star" style="top: 30%; left: 20%;"></div>
+    <div class="distant-star" style="top: 39%; left: 24%;"></div>
+    <div class="distant-star" style="top: 39%; left: 26%;"></div>
+    <div class="distant-star" style="top: 38%; left: 27%;"></div>
+    <div class="distant-star" style="top: 37%; left: 21%;"></div>
+    <div class="distant-star" style="top: 36%; left: 22%;"></div>
+    <div class="distant-star" style="top: 35%; left: 23.5%;"></div>
+
+    <!-- TITLE -->
+    <h1 class="title">Welcome to MS.sys for Machine Intelligence</h1>
+  </div>
+
+  <!-- Info Panel -->
+  <div class="info-panel" id="infoPanel">
+    <h2 id="infoTitle">Welcome</h2>
+    <p id="infoText">Hover over a node to see details.</p>
+  </div>
+
+  <!-- JavaScript -->
+</body>
+</html>

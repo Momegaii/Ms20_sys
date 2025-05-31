@@ -1,0 +1,65 @@
+.body{
+    background-image: url('images/stars.png');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    backdrop-filter: blur(3px);
+
+}
+
+.h1{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.h2{
+    font-size: 1.5em;
+    color: #c0b8b8;
+    text-align: center;
+}
+
+.field {
+
+    padding: 10px;
+    background-color: #464545;
+    color: white;
+    text-align: center;
+    box-shadow: #202020 0px 0px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+
+.p {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    font-size: 64px;
+    text-align: center;
+}
+
+.button1 {
+    background-color: #070707; /* Green */
+    border: none;
+    color: rgb(247, 243, 243);
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: #464545 0px 0px 10px;
+}
+.menu-pad {
+    padding: 10px;
+    background-color: #464545;
+    color: white;
+    text-align: center;
+    box-shadow: #202020 0px 0px 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
