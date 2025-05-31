@@ -4,17 +4,17 @@ import os
 # Ensure the directory exists
 
 
-with open("/model_100lb_6h.pkl", "rb")as f:
+with open("model/model_100lb_6h.pkl", "rb")as f:
     modelcals100 = pickle.load(f)
 
-with open("/model_200lb_6h.pkl", "rb")as f:
+with open("model/model_200lb_6h.pkl", "rb")as f:
     modelcals200 = pickle.load(f)
 
-with open("/model_300lb_6h.pkl", "rb")as f:
+with open("model/model_300lb_6h.pkl", "rb")as f:
     modelcals300 = pickle.load(f)
-with open("/lng_model.pkl","rb") as f:
+with open("model/lng_model.pkl","rb") as f:
     lng_model = pickle.load(f)
-with open("/diabetes_pred.pkl", "rb")as f:
+with open("model/diabetes_pred.pkl", "rb")as f:
     daib_model = pickle.load(f)
 
 class MS20Models:
