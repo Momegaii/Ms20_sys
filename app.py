@@ -44,6 +44,10 @@ def sndreq():
 def Grequest():
     g = 'gen.html'
     return render_template(g)
+@app.route('/WL')
+def wl():
+    mswl = 'page.html'
+    return render_template(mswl)
 
 @app.route('/api/xcal', methods=["POST"])
 def api_xcal():
