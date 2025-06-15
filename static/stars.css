@@ -31,6 +31,13 @@
   cursor: pointer;
 }
 
+.node1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
 .star {
   width: 32px;
   height: 32px;
@@ -40,7 +47,22 @@
   transition: transform 0.3s ease;
 }
 
+.star1 {
+  width: 32px;
+  height: 32px;
+  background: #800080;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #800080, 0 0 12px #A020F0;
+  transition: transform 0.3s ease;
+}
+
 .node:hover .star  {
+  transform: scale(2.5) ;
+  box-shadow: 0 0 12px #bbfd03, 0 0 18px #fffb00;
+
+}
+
+.node1:hover .star1  {
   transform: scale(2.5) ;
   box-shadow: 0 0 12px #bbfd03, 0 0 18px #fffb00;
 
