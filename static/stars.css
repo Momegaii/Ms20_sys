@@ -5,15 +5,12 @@
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
-  
 }
-
 
 .network-container {
   position: relative;
   width: 100vw;
   height: 100vh;
-  
 }
 
 .connections {
@@ -56,18 +53,15 @@
   transition: transform 0.3s ease;
 }
 
-.node:hover .star  {
-  transform: scale(2.5) ;
+.node:hover .star {
+  transform: scale(2.5);
   box-shadow: 0 0 12px #bbfd03, 0 0 18px #fffb00;
-
 }
 
-.node1:hover .star1  {
-  transform: scale(2.5) ;
+.node1:hover .star1 {
+  transform: scale(2.5);
   box-shadow: 0 0 12px #bbfd03, 0 0 18px #fffb00;
-
 }
-
 
 /* Hide embedded labels near stars */
 .node-label,
@@ -84,6 +78,7 @@
   color: #8ef10d;
   text-shadow: 0 0 8px #038819;
   z-index: 3;
+  white-space: nowrap;
 }
 
 /* Distant stars background */
@@ -114,14 +109,12 @@
   justify-content: flex-start;
   gap: 1rem;
   pointer-events: none;
-  
 }
 
 .info-panel h2 {
   color: #0f0f0f;
   font-size: 1.25rem;
   margin: 0;
-  
 }
 
 .info-panel p {
@@ -129,9 +122,9 @@
   line-height: 1.4;
   color: #181010;
   margin: 0;
-  
 }
-.CHATBOT{
+
+.CHATBOT {
   position: absolute;
   bottom: 100;
   right: 0;
@@ -145,6 +138,7 @@
   font-size: 1.2rem;
   z-index: 6;
 }
+
 .container {
   width: 70%;
   height: 10%;
@@ -153,10 +147,8 @@
   padding: 10px;
   border: none;
   border-radius: 50px;
-  
+}
 
-} 
-  
 .button {
   position: absolute;
   bottom: 0;
@@ -175,4 +167,226 @@
 .button:hover {
   background-color: #7d7f7c;
   box-shadow: 0 0 12px #e2e4df, 0 0 16px #ffffff;
+}
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+@media screen and (max-width: 768px) {
+  .body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .network-container {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 15px 100px 15px;
+  }
+
+  /* Hide connections on mobile */
+  .connections {
+    display: none;
+  }
+
+  /* Make stars stack vertically */
+  .node, .node1 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Adjust star sizes for mobile */
+  .star, .star1 {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Hide distant stars on mobile for cleaner look */
+  .distant-star {
+    display: none;
+  }
+
+  /* Adjust title for mobile */
+  .title {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    white-space: normal;
+    text-align: center;
+    width: 100%;
+    order: -1;
+  }
+
+  /* Make info panel full width at bottom */
+  .info-panel {
+    position: fixed;
+    left: 50%;
+    right: auto;
+    top: auto;
+    bottom: 10px;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 -2px 10px rgba(72, 255, 0, 0.836);
+  }
+
+  .info-panel p {
+    font-size: 1rem;
+  }
+
+  /* Adjust chatbot for mobile */
+  .CHATBOT {
+    position: relative;
+    bottom: auto;
+    height: 400px;
+    margin: 20px 0;
+  }
+
+  /* Adjust container for mobile */
+  .container {
+    width: 90%;
+    bottom: 50px;
+    position: fixed;
+  }
+
+  /* Adjust button for mobile */
+  .button {
+    width: 80px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* Small phone styles */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .star, .star1 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-panel {
+    width: 95%;
+    padding: 12px;
+    bottom: 5px;
+  }
+
+  .info-panel h2 {
+    font-size: 1rem;
+  }
+
+  .info-panel p {
+    font-size: 0.9rem;
+  }
+
+  .CHATBOT {
+    height: 300px;
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 70px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .node, .node1 {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .info-panel {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .info-panel p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .node:hover .star,
+  .node1:hover .star1 {
+    transform: none;
+  }
+
+  .node:active .star,
+  .node1:active .star1 {
+    transform: scale(2);
+    box-shadow: 0 0 12px #bbfd03, 0 0 18px #fffb00;
+  }
+
+  .button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .button:active {
+    background-color: #7d7f7c;
+    box-shadow: 0 0 12px #e2e4df, 0 0 16px #ffffff;
+  }
+}
+
+/* Landscape mode for mobile */
+@media screen and (max-width: 896px) and (orientation: landscape) {
+  .network-container {
+    padding: 40px 15px 80px 15px;
+  }
+
+  .star, .star1 {
+    width: 35px;
+    height: 35px;
+  }
+
+  .info-panel {
+    bottom: 5px;
+    min-height: 80px;
+  }
+
+  .CHATBOT {
+    height: 250px;
+  }
+}
+
+/* Ensure stars are always visible */
+.node, .node1 {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* High-resolution screens */
+@media screen and (min-width: 1440px) {
+  .star, .star1 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
 }
